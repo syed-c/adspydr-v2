@@ -12,7 +12,7 @@ function AuthCallbackContent() {
   useEffect(() => {
     const handleCallback = async () => {
       try {
-        const { error: err } = await supabase.auth.getSession();
+        const { error: err } = await supabase?.auth.getSession();
         
         if (err) {
           setError(err.message);
@@ -20,7 +20,7 @@ function AuthCallbackContent() {
         }
 
         // Get current session
-        const { data: { session } } = await supabase.auth.getSession();
+        const { data: { session } } = await supabase?.auth.getSession();
         
         if (session) {
           // Check if user profile exists
