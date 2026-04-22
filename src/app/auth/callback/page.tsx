@@ -12,7 +12,12 @@ function AuthCallbackContent() {
   useEffect(() => {
     const handleCallback = async () => {
       try {
-        const { error: err } = await supabase?.auth.getSession();
+        if (!supabase) {
+          setError('Supabase not configured');
+          return;
+        }
+        
+        const { data, error: err } = await supabase.auth.getSession();
         
         if (err) {
           setError(err.message);
@@ -20,7 +25,7 @@ function AuthCallbackContent() {
         }
 
         // Get current session
-        const { data: { session } } = await supabase?.auth.getSession();
+        const session = data?.session;
         
         if (session) {
           // Check if user profile exists
@@ -30,16 +35,25 @@ function AuthCallbackContent() {
             .eq('id', session.user.id)
             .single();
 
-          if (user?.onboarding_done) {
-            router.push('/dashboard');
-          } else {
-            router.push('/onboarding');
+          if (!user) {
+            // Create user profile
+            await supabase
+              .from('users')
+              .insert({
+                id: session.user.id,
+                email: session.user.email,
+                name: session.user.user_metadata?.name || session.user.email?.split('@')[0],
+                avatar_url: session.user.user_metadata?.avatar_url,
+              });
           }
+
+          router.push('/dashboard');
         } else {
-          router.push('/auth/login');
+          router.push('/auth/login?error=no_session');
         }
-      } catch (err: any) {
-        setError(err.message || 'Authentication failed');
+      } catch (err) {
+        console.error('Auth callback error:', err);
+        setError('Authentication failed');
       }
     };
 
@@ -48,12 +62,12 @@ function AuthCallbackContent() {
 
   if (error) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
-        <div className="text-center">
-          <h1 className="text-2xl font-bold text-[#EF4444] mb-4">Authentication Failed</h1>
-          <p className="text-[#64748B] mb-4">{error}</p>
-          <a href="/auth/login" className="text-[#2563EB] hover:underline">
-            Try again
+      <div className="min-h-screen flex items-center justify-center bg-[#C4CBCA]">
+        <div className="text-center p-8">
+          <h1 className="text-2xl font-bold text-[#0A0F0D] mb-4">Authentication Error</h1>
+          <p className="text-[#0A0F0D]">{error}</p>
+          <a href="/auth/login" className="inline-block mt-4 px-6 py-3 bg-[#F95738] text-white rounded-lg">
+            Back to Login
           </a>
         </div>
       </div>
@@ -61,10 +75,10 @@ function AuthCallbackContent() {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center">
+    <div className="min-h-screen flex items-center justify-center bg-[#C4CBCA]">
       <div className="text-center">
-        <div className="w-12 h-12 border-4 border-[#2563EB] border-t-transparent rounded-full animate-spin mx-auto mb-4" />
-        <p className="text-[#64748B]">Completing sign in...</p>
+        <div className="w-12 h-12 border-4 border-[#F95738] border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+        <p className="text-[#0A0F0D]">Authenticating...</p>
       </div>
     </div>
   );
@@ -73,11 +87,8 @@ function AuthCallbackContent() {
 export default function AuthCallbackPage() {
   return (
     <Suspense fallback={
-      <div className="min-h-screen flex items-center justify-center">
-        <div className="text-center">
-          <div className="w-12 h-12 border-4 border-[#2563EB] border-t-transparent rounded-full animate-spin mx-auto mb-4" />
-          <p className="text-[#64748B]">Loading...</p>
-        </div>
+      <div className="min-h-screen flex items-center justify-center bg-[#C4CBCA]">
+        <p className="text-[#0A0F0D]">Loading...</p>
       </div>
     }>
       <AuthCallbackContent />
