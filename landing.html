@@ -1,0 +1,2150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ads SpyDR — Competitor Ad Spy Tool | See Any Brand's Facebook & Google Ads Free</title>
+    <meta name="description" content="Ads SpyDR lets you spy on any competitor's Facebook and Google ads in seconds. See active creatives, estimated ad spend, AI strategy analysis, and copy inspiration. Free to start. The best AdSpy alternative in 2026.">
+    <meta name="keywords" content="competitor ad spy tool, facebook ad spy, google ad spy, adspy alternative, see competitor facebook ads, ad library tool, marketing intelligence, ad copy spy, facebook ad library search, bigspy alternative, minea alternative, free ad spy tool, spy on competitor ads 2026">
+    <meta property="og:title" content="Ads SpyDR — See Every Ad Your Competitors Are Running">
+    <meta property="og:description" content="Enter any competitor domain. Instantly see their active Facebook & Google ads, estimated spend, and get an AI strategy breakdown.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.adspydr.com/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ads SpyDR — Competitor Ad Spy Tool">
+    <meta name="twitter:description" content="See every ad your competitors are running. Free to start.">
+    <link rel="canonical" href="https://www.adspydr.com/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Ads SpyDR",
+        "description": "Competitor ad spy tool that lets marketers see active Facebook & Google ads, estimated spend, and AI strategy breakdown",
+        "offers": [
+            {
+                "@type": "Offer",
+                "name": "Free",
+                "price": "0",
+                "priceCurrency": "USD",
+                "description": "5 searches/day, last 5 active ads, Facebook only, basic AI summary"
+            },
+            {
+                "@type": "Offer",
+                "name": "Pro",
+                "price": "29",
+                "priceCurrency": "USD",
+                "description": "Unlimited searches, all active + historical ads, Facebook + Google, full AI analysis"
+            },
+            {
+                "@type": "Offer",
+                "name": "Agency",
+                "price": "99",
+                "priceCurrency": "USD",
+                "description": "Everything in Pro + 5 team seats, white-label PDF reports, track 20 competitors, API access"
+            }
+        ],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "312"
+        }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How can I see my competitor's Facebook ads for free?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Simply enter any competitor's domain in Ads SpyDR and you'll instantly see their active Facebook ads, creative elements, and landing pages. The free plan includes 5 searches per day."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is Ads SpyDR better than AdSpy?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ads SpyDR offers additional features like Google ad tracking, AI-powered strategy analysis, and estimated spend data that traditional tools don't provide."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I see Google ads as well as Facebook ads?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes! Ads SpyDR tracks both Facebook and Google ads. The Pro plan includes full access to both platforms, while the free plan focuses on Facebook ads."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How accurate are the ad spend estimates?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Our spend estimates are based on real-time API data from Meta and Google Transparency, combined with our proprietary algorithms. Estimates typically have a 15-25% accuracy range."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is it legal to spy on competitor ads?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes! All ad data we provide comes from publicly available sources like Meta's Ad Library and Google's Ad Transparency Center. This is completely legal and ethical."
+                }
+            }
+        ]
+    }
+    </script>
+    <style>
+        :root {
+            --bg: #FFFFFF;
+            --bg-subtle: #F8F9FA;
+            --bg-muted: #F1F5F9;
+            --surface: #FFFFFF;
+            --border: #E2E8F0;
+            --border-strong: #CBD5E1;
+            --text-primary: #0A0A0A;
+            --text-secondary: #334155;
+            --text-muted: #64748B;
+            --text-hint: #94A3B8;
+            --accent: #2563EB;
+            --accent-hover: #1D4ED8;
+            --accent-light: #EFF6FF;
+            --accent-border: #BFDBFE;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+            --shadow-md: 0 4px 16px rgba(0,0,0,0.08), 0 2px 4px rgba(0,0,0,0.04);
+            --shadow-lg: 0 12px 40px rgba(0,0,0,0.10), 0 4px 12px rgba(0,0,0,0.06);
+            --shadow-float: 0 20px 60px rgba(0,0,0,0.12), 0 8px 20px rgba(0,0,0,0.06);
+            --radius: 12px;
+            --radius-lg: 20px;
+            --radius-pill: 999px;
+            --font: 'Plus Jakarta Sans', system-ui, sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font);
+            background: var(--bg);
+            color: var(--text-primary);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        h1, h2, h3, h4 {
+            font-weight: 900;
+            line-height: 1.1;
+            letter-spacing: -0.03em;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 28px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: var(--radius-pill);
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border: none;
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: var(--accent-hover);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--text-primary);
+            border: 1.5px solid var(--border-strong);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--text-primary);
+            transform: translateY(-2px);
+        }
+
+        .pill {
+            display: inline-block;
+            padding: 6px 14px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-pill);
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .card {
+            background: var(--surface);
+            border: 0.5px solid var(--border);
+            border-radius: 16px;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-14px); }
+        }
+
+        @keyframes float-6 {
+            0%, 100% { transform: translateY(0) rotate(-6deg); }
+            50% { transform: translateY(-14px) rotate(-6deg); }
+        }
+
+        @keyframes float-4 {
+            0%, 100% { transform: translateY(0) rotate(4deg); }
+            50% { transform: translateY(-14px) rotate(4deg); }
+        }
+
+        @keyframes float-8 {
+            0%, 100% { transform: translateY(0) rotate(-8deg); }
+            50% { transform: translateY(-14px) rotate(-8deg); }
+        }
+
+        @keyframes float-5 {
+            0%, 100% { transform: translateY(0) rotate(5deg); }
+            50% { transform: translateY(-14px) rotate(5deg); }
+        }
+
+        @keyframes float-3 {
+            0%, 100% { transform: translateY(0) rotate(3deg); }
+            50% { transform: translateY(-14px) rotate(3deg); }
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        @keyframes countUp {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .nav-scrolled {
+            background: rgba(255, 255, 255, 0.9) !important;
+            backdrop-filter: blur(12px);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .mobile-menu {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links, .nav-actions {
+                display: none;
+            }
+            .mobile-menu {
+                display: block;
+            }
+            .floating-cards {
+                display: none;
+            }
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: var(--bg);
+            border-bottom: 1px solid var(--border);
+            transition: all 0.3s ease;
+        }
+
+        nav .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 72px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 20px;
+            font-weight: 800;
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 36px;
+            height: 36px;
+            background: var(--accent);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 15px;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .sign-in {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 15px;
+        }
+
+        .sign-in:hover {
+            color: var(--accent);
+        }
+
+        .hero {
+            min-height: 100vh;
+            padding-top: 72px;
+            background-color: var(--bg);
+            background-image: radial-gradient(circle, #D1D5DB 1px, transparent 1px);
+            background-size: 28px 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            text-align: center;
+            max-width: 800px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .hero h1 {
+            font-size: clamp(48px, 7vw, 90px);
+            margin-bottom: 20px;
+            color: var(--text-primary);
+        }
+
+        .hero h1 span {
+            display: block;
+        }
+
+        .hero-subtitle {
+            font-size: 18px;
+            color: var(--text-muted);
+            max-width: 520px;
+            margin: 0 auto 32px;
+            line-height: 1.7;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            margin-bottom: 24px;
+            flex-wrap: wrap;
+        }
+
+        .hero-proof {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        .stars {
+            color: #F59E0B;
+            letter-spacing: 2px;
+        }
+
+        .hero-form {
+            display: flex;
+            gap: 12px;
+            max-width: 540px;
+            margin: 0 auto 32px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .hero-form input {
+            flex: 1;
+            min-width: 240px;
+            padding: 16px 20px;
+            border: 1.5px solid var(--border);
+            border-radius: var(--radius-pill);
+            font-size: 16px;
+            font-family: var(--font);
+            outline: none;
+            transition: all 0.2s;
+        }
+
+        .hero-form input:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 4px var(--accent-light);
+        }
+
+        .search-results {
+            max-width: 600px;
+            margin: 32px auto 0;
+            display: none;
+        }
+
+        .search-results.active {
+            display: block;
+            animation: fadeIn 0.4s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .result-card {
+            background: var(--surface);
+            border: 0.5px solid var(--border);
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 12px;
+            box-shadow: var(--shadow-sm);
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .result-avatar {
+            width: 48px;
+            height: 48px;
+            background: var(--accent-light);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            color: var(--accent);
+        }
+
+        .result-info {
+            flex: 1;
+        }
+
+        .result-title {
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .result-meta {
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        .result-spend {
+            background: #FEF3C7;
+            color: #B45309;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .floating-card {
+            position: absolute;
+            background: var(--surface);
+            border-radius: 12px;
+            box-shadow: var(--shadow-float);
+            padding: 16px;
+            z-index: 5;
+        }
+
+        .fc-1 {
+            top: 15%;
+            left: 5%;
+            animation: float-6 5s ease-in-out infinite;
+            background: #FEF08A;
+            transform: rotate(-6deg);
+            font-family: 'Caveat', cursive, sans-serif;
+            font-size: 15px;
+            border: none;
+        }
+
+        .fc-2 {
+            top: 20%;
+            right: 8%;
+            animation: float-4 6s ease-in-out infinite 0.5s;
+            transform: rotate(4deg);
+        }
+
+        .fc-3 {
+            bottom: 25%;
+            left: 8%;
+            animation: float-8 5.5s ease-in-out infinite 1s;
+            transform: rotate(-8deg);
+        }
+
+        .fc-4 {
+            bottom: 20%;
+            right: 5%;
+            animation: float-5 6s ease-in-out infinite 1.5s;
+            transform: rotate(5deg);
+        }
+
+        .fc-center {
+            top: 12%;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: float 7s ease-in-out infinite 2s;
+            display: none;
+        }
+
+        @media (min-width: 1200px) {
+            .fc-center {
+                display: block;
+            }
+        }
+
+        .radar-icon {
+            width: 60px;
+            height: 60px;
+            border: 3px solid var(--accent);
+            border-radius: 50%;
+            position: relative;
+        }
+
+        .radar-icon::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 20px;
+            height: 20px;
+            background: var(--accent);
+            border-radius: 50%;
+        }
+
+        .radar-icon::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 36px;
+            height: 36px;
+            border: 1px solid var(--accent);
+            border-radius: 50%;
+        }
+
+        .trust-bar {
+            background: var(--bg-subtle);
+            padding: 40px 0;
+            overflow: hidden;
+        }
+
+        .trust-label {
+            text-align: center;
+            font-size: 13px;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 20px;
+        }
+
+        .trust-marquee {
+            display: flex;
+            animation: marquee 20s linear infinite;
+        }
+
+        .trust-marquee:hover {
+            animation-play-state: paused;
+        }
+
+        .trust-track {
+            display: flex;
+            gap: 80px;
+            flex-shrink: 0;
+        }
+
+        .trust-track span {
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--text-muted);
+            white-space: nowrap;
+        }
+
+        section {
+            padding: 120px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 64px;
+        }
+
+        .section-header h2 {
+            font-size: clamp(32px, 5vw, 48px);
+            margin-bottom: 16px;
+        }
+
+        .section-header p {
+            font-size: 18px;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .solutions-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+            margin-bottom: 64px;
+        }
+
+        .solution-item {
+            text-align: center;
+            padding: 24px;
+        }
+
+        .solution-icon {
+            width: 56px;
+            height: 56px;
+            background: var(--accent-light);
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 16px;
+            font-size: 24px;
+        }
+
+        .solution-item h3 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .solution-item p {
+            font-size: 15px;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        .product-mockup {
+            background: var(--accent-light);
+            border-radius: 24px;
+            padding: 24px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .dashboard {
+            background: var(--surface);
+            border-radius: 16px;
+            box-shadow: var(--shadow-lg);
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: 220px 1fr 280px;
+            min-height: 520px;
+        }
+
+        .dashboard-sidebar {
+            background: #F8FAFC;
+            padding: 20px;
+            border-right: 1px solid var(--border);
+        }
+
+        .sidebar-logo {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 700;
+            font-size: 16px;
+            margin-bottom: 24px;
+            padding-left: 8px;
+        }
+
+        .sidebar-logo span {
+            color: var(--accent);
+        }
+
+        .sidebar-nav {
+            list-style: none;
+        }
+
+        .sidebar-nav li {
+            padding: 10px 12px;
+            border-radius: 8px;
+            margin-bottom: 4px;
+            font-size: 14px;
+            color: var(--text-muted);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .sidebar-nav li.active {
+            background: var(--surface);
+            color: var(--text-primary);
+            font-weight: 600;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .sidebar-nav li:hover:not(.active) {
+            background: rgba(0,0,0,0.03);
+        }
+
+        .dashboard-main {
+            padding: 24px;
+        }
+
+        .greeting {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .search-box {
+            background: var(--bg-subtle);
+            border-radius: 12px;
+            padding: 14px 18px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+
+        .search-box svg {
+            color: var(--text-muted);
+        }
+
+        .search-box input {
+            flex: 1;
+            border: none;
+            background: none;
+            font-size: 14px;
+            font-family: var(--font);
+            outline: none;
+        }
+
+        .ad-results-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+
+        .ad-result-card {
+            background: var(--bg-subtle);
+            border-radius: 12px;
+            padding: 16px;
+        }
+
+        .ad-result-img {
+            width: 100%;
+            height: 90px;
+            background: linear-gradient(135deg, #E0E7FF 0%, #C7D2FE 100%);
+            border-radius: 8px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+        }
+
+        .ad-result-title {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .ad-result-meta {
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        .dashboard-ai {
+            background: #F8FAFC;
+            padding: 24px;
+            border-left: 1px solid var(--border);
+        }
+
+        .ai-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            font-size: 15px;
+        }
+
+        .ai-header span {
+            color: var(--accent);
+        }
+
+        .ai-insight {
+            background: var(--surface);
+            border-radius: 10px;
+            padding: 14px;
+            margin-bottom: 12px;
+            font-size: 13px;
+            line-height: 1.5;
+            border: 0.5px solid var(--border);
+        }
+
+        .ai-insight-title {
+            font-weight: 600;
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, auto);
+            gap: 20px;
+        }
+
+        .feature-card {
+            background: var(--surface);
+            border: 0.5px solid var(--border);
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .feature-card.large {
+            grid-column: span 2;
+        }
+
+        .feature-card.medium {
+            grid-column: span 2;
+        }
+
+        .feature-card.accent {
+            background: var(--accent);
+            color: white;
+            border: none;
+        }
+
+        .feature-icon {
+            width: 44px;
+            height: 44px;
+            background: var(--accent-light);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            margin-bottom: 16px;
+        }
+
+        .feature-card.accent .feature-icon {
+            background: rgba(255,255,255,0.2);
+        }
+
+        .feature-card h3 {
+            font-size: 17px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .feature-card p {
+            font-size: 14px;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+
+        .feature-card.accent p {
+            color: rgba(255,255,255,0.8);
+        }
+
+        .mini-ui {
+            background: var(--bg-subtle);
+            border-radius: 10px;
+            padding: 14px;
+            margin-top: 16px;
+        }
+
+        .mini-ad {
+            display: flex;
+            gap: 12px;
+            padding: 10px;
+            background: var(--surface);
+            border-radius: 8px;
+            margin-bottom: 8px;
+        }
+
+        .mini-ad-img {
+            width: 48px;
+            height: 36px;
+            background: linear-gradient(135deg, #E0E7FF, #C7D2FE);
+            border-radius: 6px;
+        }
+
+        .mini-ad-info {
+            flex: 1;
+        }
+
+        .mini-ad-title {
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .mini-ad-status {
+            font-size: 11px;
+            color: #10B981;
+        }
+
+        .timeline-bar {
+            display: flex;
+            align-items: flex-end;
+            gap: 6px;
+            height: 60px;
+            margin-top: 12px;
+        }
+
+        .timeline-bar span {
+            flex: 1;
+            background: var(--accent);
+            border-radius: 3px;
+            opacity: 0.7;
+        }
+
+        .how-it-works {
+            background: var(--bg-subtle);
+        }
+
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            position: relative;
+        }
+
+        .step {
+            text-align: center;
+            position: relative;
+        }
+
+        .step-number {
+            position: relative;
+            width: 80px;
+            height: 80px;
+            background: var(--border);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--text-hint);
+        }
+
+        .step-icon {
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 44px;
+            height: 44px;
+            background: var(--surface);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .step h3 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .step p {
+            font-size: 14px;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+
+        .connector {
+            position: absolute;
+            top: 40px;
+            left: calc(25% + 30px);
+            right: calc(25% - 30px);
+            height: 2px;
+            background: var(--border);
+            z-index: 0;
+        }
+
+        .connector::after {
+            content: '→';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translate(50%, -50%);
+            color: var(--border-strong);
+            font-size: 20px;
+        }
+
+        .integrations-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 20px;
+            align-items: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .integration-card {
+            background: var(--surface);
+            border: 0.5px solid var(--border);
+            border-radius: 16px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s;
+            aspect-ratio: 1;
+        }
+
+        .integration-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .integration-card.center {
+            grid-column: span 2;
+            grid-row: span 2;
+            background: var(--accent);
+            border: none;
+            transform: scale(1.1);
+        }
+
+        .integration-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .int-logo {
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        .int-logo.facebook { background: #1877F2; color: white; }
+        .int-logo.google { background: #EA4335; color: white; }
+        .int-logo.tiktok { background: #000000; color: white; }
+        .int-logo.slack { background: #4A154B; color: white; }
+        .int-logo.gmail { background: #EA4335; color: white; }
+        .int-logo.calendar { background: #4285F4; color: white; }
+        .int-logo.notion { background: #000000; color: white; }
+        .int-logo.hubspot { background: #FF7A59; color: white; }
+        .int-logo.salesforce { background: #00A1E0; color: white; }
+        .int-logo.zapier { background: #FF4A00; color: white; }
+        .int-logo.drive { background: #4285F4; color: white; }
+        .int-logo.figma { background: #F24E1E; color: white; }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .testimonial-card {
+            background: var(--surface);
+            border: 0.5px solid var(--border);
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .testimonial-card.large {
+            grid-column: span 2;
+        }
+
+        .testimonial-quote {
+            font-size: 15px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .author-avatar {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 14px;
+            color: white;
+        }
+
+        .author-info h4 {
+            font-size: 15px;
+            font-weight: 700;
+        }
+
+        .author-info p {
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            align-items: start;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .pricing-card {
+            background: var(--surface);
+            border: 0.5px solid var(--border);
+            border-radius: 20px;
+            padding: 32px;
+            box-shadow: var(--shadow-sm);
+            text-align: center;
+            transition: all 0.3s;
+        }
+
+        .pricing-card.featured {
+            background: var(--accent);
+            color: white;
+            border: none;
+            transform: scale(1.05);
+            position: relative;
+        }
+
+        .pricing-card.featured .price {
+            color: white;
+        }
+
+        .pricing-card.featured .features li {
+            color: rgba(255,255,255,0.85);
+        }
+
+        .pricing-badge {
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #10B981;
+            color: white;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .pricing-card h3 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .pricing-card .price {
+            font-size: 48px;
+            font-weight: 800;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+        }
+
+        .pricing-card .price span {
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--text-muted);
+        }
+
+        .pricing-card.featured .price span {
+            color: rgba(255,255,255,0.7);
+        }
+
+        .pricing-card .desc {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-bottom: 24px;
+        }
+
+        .pricing-card.featured .desc {
+            color: rgba(255,255,255,0.7);
+        }
+
+        .pricing-card .features {
+            list-style: none;
+            text-align: left;
+            margin-bottom: 32px;
+        }
+
+        .pricing-card .features li {
+            padding: 8px 0;
+            font-size: 14px;
+            color: var(--text-secondary);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .pricing-card .features li::before {
+            content: '✓';
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        .pricing-card.featured .features li::before {
+            color: white;
+        }
+
+        .pricing-card .btn {
+            width: 100%;
+        }
+
+        .pricing-note {
+            text-align: center;
+            margin-top: 24px;
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+
+        .final-cta {
+            background: var(--bg-subtle);
+        }
+
+        .final-cta-content {
+            text-align: center;
+            position: relative;
+        }
+
+        .final-cta h2 {
+            font-size: clamp(36px, 5vw, 52px);
+            margin-bottom: 16px;
+        }
+
+        .final-cta p {
+            font-size: 18px;
+            color: var(--text-muted);
+            margin-bottom: 32px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .floating-icons {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            pointer-events: none;
+        }
+
+        .float-icon {
+            position: absolute;
+            background: var(--surface);
+            border-radius: 14px;
+            padding: 16px;
+            box-shadow: var(--shadow-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        footer {
+            padding: 48px 0;
+            border-top: 1px solid var(--border);
+            background: var(--bg);
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-left {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+
+        .footer-right {
+            display: flex;
+            gap: 48px;
+        }
+
+        .footer-column {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .footer-column a {
+            font-size: 14px;
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer-column a:hover {
+            color: var(--accent);
+        }
+
+        .footer-column h4 {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        @media (max-width: 900px) {
+            .solutions-grid, .features-grid, .steps, .testimonials-grid, .pricing-grid, .integrations-grid {
+                grid-template-columns: 1fr;
+            }
+            .dashboard {
+                grid-template-columns: 1fr;
+            }
+            .dashboard-sidebar, .dashboard-ai {
+                display: none;
+            }
+            .feature-card.large, .feature-card.medium {
+                grid-column: span 1;
+            }
+            .testimonial-card.large {
+                grid-column: span 1;
+            }
+            .pricing-card.featured {
+                transform: scale(1);
+            }
+            .footer-content {
+                flex-direction: column;
+                gap: 32px;
+            }
+            .footer-right {
+                flex-wrap: wrap;
+                gap: 24px;
+            }
+            .connector {
+                display: none;
+            }
+            .steps {
+                gap: 48px;
+            }
+            .floating-card {
+                display: none;
+            }
+        }
+
+        .notification-badge {
+            background: #FEE2E2;
+            color: #DC2626;
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .loading-spinner {
+            width: 20px;
+            height: 20px;
+            border: 2px solid rgba(255,255,255,0.3);
+            border-top-color: white;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="container">
+            <a href="/" class="logo">
+                <div class="logo-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5">
+                        <circle cx="12" cy="12" r="10"/>
+                        <circle cx="12" cy="12" r="6"/>
+                        <circle cx="12" cy="12" r="2"/>
+                        <line x1="12" y1="2" x2="12" y2="4"/>
+                        <line x1="12" y1="20" x2="12" y2="22"/>
+                        <line x1="2" y1="12" x2="4" y2="12"/>
+                        <line x1="20" y1="12" x2="22" y2="12"/>
+                    </svg>
+                </div>
+                Ads SpyDR
+            </a>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#solutions">Solutions</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#blog">Blog</a>
+            </div>
+            <div class="nav-actions">
+                <a href="#" class="sign-in">Sign in</a>
+                <a href="#hero-search" class="btn btn-primary">Get free demo</a>
+            </div>
+            <div class="mobile-menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="6" x2="21" y2="6"/>
+                    <line x1="3" y1="12" x2="21" y2="12"/>
+                    <line x1="3" y1="18" x2="21" y2="18"/>
+                </svg>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" id="hero">
+        <div class="floating-card fc-1">
+            Your competitor launched 3 new ads this week
+        </div>
+        <div class="floating-card fc-2">
+            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 8px;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polyline points="12,6 12,12 16,14"/>
+                </svg>
+                <span style="font-weight: 600; font-size: 14px;">Ad Running: 23 days</span>
+            </div>
+            <div style="background: #FEF3C7; color: #B45309; padding: 6px 12px; border-radius: 20px; font-size: 13px; font-weight: 600;">
+                $18k–35k/mo
+            </div>
+        </div>
+        <div class="floating-card fc-3">
+            <div style="font-weight: 600; font-size: 13px; margin-bottom: 10px;">Today's spy results</div>
+            <div style="display: flex; flex-direction: column; gap: 8px;">
+                <div style="display: flex; align-items: center; gap: 8px;">
+                    <div style="width: 28px; height: 28px; background: #E0E7FF; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 600; color: #2563EB;">N</div>
+                    <div style="flex: 1;">
+                        <div style="font-size: 12px; font-weight: 600;">Nike</div>
+                        <div style="height: 4px; background: #E2E8F0; border-radius: 2px; margin-top: 4px; overflow: hidden;">
+                            <div style="width: 75%; height: 100%; background: #2563EB; border-radius: 2px;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px;">
+                    <div style="width: 28px; height: 28px; background: #FCE7F3; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 600; color: #DB2777;">G</div>
+                    <div style="flex: 1;">
+                        <div style="font-size: 12px; font-weight: 600;">Gymshark</div>
+                        <div style="height: 4px; background: #E2E8F0; border-radius: 2px; margin-top: 4px; overflow: hidden;">
+                            <div style="width: 60%; height: 100%; background: #2563EB; border-radius: 2px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="floating-card fc-4">
+            <div style="font-weight: 600; font-size: 13px; margin-bottom: 10px;">100+ integrations</div>
+            <div style="display: flex; gap: 8px;">
+                <div style="width: 32px; height: 32px; background: #1877F2; border-radius: 8px;"></div>
+                <div style="width: 32px; height: 32px; background: #EA4335; border-radius: 8px;"></div>
+                <div style="width: 32px; height: 32px; background: #000000; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-size: 14px;">T</div>
+            </div>
+        </div>
+        <div class="floating-card fc-center">
+            <div class="radar-icon"></div>
+        </div>
+
+        <div class="hero-content">
+            <span class="pill" style="margin-bottom: 24px;">100% Free to start</span>
+            <h1>
+                <span>Spy on your competitors.</span>
+                <span>Win every campaign.</span>
+            </h1>
+            <p class="hero-subtitle">
+                Enter any competitor domain. Instantly see their active Facebook & Google ads, estimated spend, and get an AI strategy breakdown — free to start.
+            </p>
+            <form class="hero-form" id="hero-search" onsubmit="handleHeroSearch(event)">
+                <input type="text" id="domain-input" placeholder="Enter competitor domain (e.g. nike.com)" required>
+                <button type="submit" class="btn btn-primary" id="search-btn">
+                    <span id="btn-text">Spy Now</span>
+                </button>
+            </form>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="document.getElementById('hero-search').scrollIntoView({behavior: 'smooth'})">Start spying free</button>
+                <button class="btn btn-secondary">Watch demo →</button>
+            </div>
+            <div class="hero-proof">
+                <span class="stars">★★★★★</span>
+                <span>4.8/5 from 300+ marketers</span>
+                <span>·</span>
+                <span>No credit card</span>
+            </div>
+
+            <div class="search-results" id="search-results">
+                <div class="result-card">
+                    <div class="result-avatar">N</div>
+                    <div class="result-info">
+                        <div class="result-title">Nike</div>
+                        <div class="result-meta">12 active ads · Facebook & Google</div>
+                    </div>
+                    <div class="result-spend">$45k–80k/mo</div>
+                </div>
+                <div class="result-card">
+                    <div class="result-avatar">G</div>
+                    <div class="result-info">
+                        <div class="result-title">Gymshark</div>
+                        <div class="result-meta">8 active ads · Facebook</div>
+                    </div>
+                    <div class="result-spend">$25k–40k/mo</div>
+                </div>
+                <div class="result-card">
+                    <div class="result-avatar">A</div>
+                    <div class="result-info">
+                        <div class="result-title">Adidas</div>
+                        <div class="result-meta">15 active ads · Facebook & Google</div>
+                    </div>
+                    <div class="result-spend">$60k–95k/mo</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="trust-bar">
+        <div class="container">
+            <div class="trust-label">Trusted by growth teams at</div>
+            <div class="trust-marquee">
+                <div class="trust-track">
+                    <span>Ogilvy</span>
+                    <span>Dentsu</span>
+                    <span>BBDO</span>
+                    <span>WebFX</span>
+                    <span>Wpromote</span>
+                    <span>Thrive Agency</span>
+                    <span>Disruptive Advertising</span>
+                    <span>Ogilvy</span>
+                    <span>Dentsu</span>
+                    <span>BBDO</span>
+                    <span>WebFX</span>
+                    <span>Wpromote</span>
+                    <span>Thrive Agency</span>
+                    <span>Disruptive Advertising</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="solutions">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="pill">Solutions</span>
+                <h2>Solve your team's biggest ad challenges</h2>
+            </div>
+            <div class="solutions-grid reveal">
+                <div class="solution-item">
+                    <div class="solution-icon">📡</div>
+                    <h3>Always know what's running</h3>
+                    <p>Ensure your team always knows what competitors are actively spending on, with real-time ad monitoring</p>
+                </div>
+                <div class="solution-item">
+                    <div class="solution-icon">⚡</div>
+                    <h3>Prioritize your ad angles</h3>
+                    <p>Analyze which hooks and CTAs competitors are doubling down on so you focus your budget where it wins</p>
+                </div>
+                <div class="solution-item">
+                    <div class="solution-icon">🎯</div>
+                    <h3>Hold your strategy accountable</h3>
+                    <p>Compare your campaigns against competitors without guessing what they're doing</p>
+                </div>
+            </div>
+            <div class="product-mockup reveal">
+                <div class="dashboard">
+                    <div class="dashboard-sidebar">
+                        <div class="sidebar-logo">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2.5">
+                                <circle cx="12" cy="12" r="10"/>
+                                <circle cx="12" cy="12" r="6"/>
+                                <circle cx="12" cy="12" r="2"/>
+                            </svg>
+                            <span>Ads SpyDR</span>
+                        </div>
+                        <ul class="sidebar-nav">
+                            <li class="active">Home</li>
+                            <li>My Searches</li>
+                            <li>Alerts</li>
+                            <li>Reports</li>
+                            <li>Settings</li>
+                        </ul>
+                    </div>
+                    <div class="dashboard-main">
+                        <div class="greeting">Good morning, Alex</div>
+                        <div class="search-box">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"/>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                            </svg>
+                            <input type="text" placeholder="Enter domain to spy on...">
+                        </div>
+                        <div class="ad-results-grid">
+                            <div class="ad-result-card">
+                                <div class="ad-result-img">🏃</div>
+                                <div class="ad-result-title">Nike Summer Sale</div>
+                                <div class="ad-result-meta">Running 12 days</div>
+                            </div>
+                            <div class="ad-result-card">
+                                <div class="ad-result-img">👟</div>
+                                <div class="ad-result-title">Air Max Collection</div>
+                                <div class="ad-result-meta">Running 8 days</div>
+                            </div>
+                            <div class="ad-result-card">
+                                <div class="ad-result-img">🏋️</div>
+                                <div class="ad-result-title">Training Gear Promo</div>
+                                <div class="ad-result-meta">Running 5 days</div>
+                            </div>
+                            <div class="ad-result-card">
+                                <div class="ad-result-img">🎯</div>
+                                <div class="ad-result-title">Member Exclusive</div>
+                                <div class="ad-result-meta">Running 3 days</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashboard-ai">
+                        <div class="ai-header">
+                            <span>🤖</span> AI Analysis
+                        </div>
+                        <div class="ai-insight">
+                            <div class="ai-insight-title">🎣 Top Hook</div>
+                            "Train like a pro" — used in 3 of 5 top ads
+                        </div>
+                        <div class="ai-insight">
+                            <div class="ai-insight-title">💰 Spend Pattern</div>
+                            Highest budget allocated to retargeting campaigns
+                        </div>
+                        <div class="ai-insight">
+                            <div class="ai-insight-title">📐 Creative Style</div>
+                            User-generated content performs 2x better than studio
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="pill">Features</span>
+                <h2>Keep all competitor intel in one place</h2>
+                <p>Forget juggling tabs and spreadsheets.</p>
+            </div>
+            <div class="features-grid reveal">
+                <div class="feature-card large">
+                    <div class="feature-icon">📺</div>
+                    <h3>Live Ad Monitoring</h3>
+                    <p>See every ad your competitors are running in real-time. Get notified the moment a new ad goes live.</p>
+                    <div class="mini-ui">
+                        <div class="mini-ad">
+                            <div class="mini-ad-img"></div>
+                            <div class="mini-ad-info">
+                                <div class="mini-ad-title">Summer Collection</div>
+                                <div class="mini-ad-status">● Active now</div>
+                            </div>
+                        </div>
+                        <div class="mini-ad">
+                            <div class="mini-ad-img"></div>
+                            <div class="mini-ad-info">
+                                <div class="mini-ad-title">New Arrivals</div>
+                                <div class="mini-ad-status">● Active now</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-card accent">
+                    <div class="feature-icon">🤖</div>
+                    <h3>AI Strategy Analysis</h3>
+                    <p>Get instant insights on competitor hooks, CTAs, and messaging angles powered by advanced AI.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💵</div>
+                    <h3>Spend Estimation</h3>
+                    <p>Know exactly what competitors are spending with our proprietary estimation algorithm.</p>
+                </div>
+                <div class="feature-card medium">
+                    <div class="feature-icon">🔔</div>
+                    <h3>Competitor Alerts</h3>
+                    <p>Never miss a competitor move. Get instant notifications when they launch new campaigns.</p>
+                    <div class="notification-badge" style="margin-top: 12px;">🔔 Nike just launched 2 new ads</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📥</div>
+                    <h3>Ad Copy Export</h3>
+                    <p>Export ads to CSV or PDF for presentations and team sharing.</p>
+                </div>
+                <div class="feature-card medium">
+                    <div class="feature-icon">📊</div>
+                    <h3>Historical Archive</h3>
+                    <p>Access months of competitor ad history to spot trends and seasonal patterns.</p>
+                    <div class="timeline-bar">
+                        <span style="height: 30%"></span>
+                        <span style="height: 45%"></span>
+                        <span style="height: 60%"></span>
+                        <span style="height: 40%"></span>
+                        <span style="height: 75%"></span>
+                        <span style="height: 90%"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="pill">How it works</span>
+                <h2>From domain to intel in under 10 seconds</h2>
+            </div>
+            <div class="steps reveal">
+                <div class="connector"></div>
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">🌐</div>
+                    <h3>Enter any domain</h3>
+                    <p>Type competitor URL and we'll instantly start scanning</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">🔍</div>
+                    <h3>We fetch all their ads</h3>
+                    <p>Pull data from Meta API + Google Transparency</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">🧠</div>
+                    <h3>AI analyses strategy</h3>
+                    <p>Get insights on hooks, CTAs, and spend patterns</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-icon">📤</div>
+                    <h3>Export & set alerts</h3>
+                    <p>Download CSV, PDF, or get email notifications</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="integrations">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="pill">Integrations</span>
+                <h2>Connects with tools you already use</h2>
+            </div>
+            <div class="integrations-grid reveal">
+                <div class="integration-card">
+                    <div class="integration-logo">
+                        <div class="int-logo gmail">G</div>
+                    </div>
+                </div>
+                <div class="integration-card">
+                    <div class="integration-logo">
+                        <div class="int-logo slack">S</div>
+                    </div>
+                </div>
+                <div class="integration-card center">
+                    <div class="integration-logo" style="flex-direction: column; gap: 8px;">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <circle cx="12" cy="12" r="6"/>
+                            <circle cx="12" cy="12" r="2"/>
+                        </svg>
+                        <span style="color: white; font-weight: 700; font-size: 16px;">Ads SpyDR</span>
+                    </div>
+                </div>
+                <div class="integration-card">
+                    <div class="integration-logo">
+                        <div class="int-logo calendar">C</div>
+                    </div>
+                </div>
+                <div class="integration-card">
+                    <div class="integration-logo">
+                        <div class="int-logo notion">N</div>
+                    </div>
+                </div>
+                <div class="integration-card">
+                    <div class="integration-logo">
+                        <div class="int-logo hubspot">H</div>
+                    </div>
+                </div>
+                <div class="integration-card">
+                    <div class="integration-logo">
+                        <div class="int-logo salesforce">SF</div>
+                    </div>
+                </div>
+                <div class="integration-card">
+                    <div class="integration-logo">
+                        <div class="int-logo zapier">Z</div>
+                    </div>
+                </div>
+                <div class="integration-card">
+                    <div class="integration-logo">
+                        <div class="int-logo drive">D</div>
+                    </div>
+                </div>
+                <div class="integration-card">
+                    <div class="integration-logo">
+                        <div class="int-logo figma">F</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="pill">Testimonials</span>
+                <h2>People just like you are already using Ads SpyDR</h2>
+            </div>
+            <div class="testimonials-grid reveal">
+                <div class="testimonial-card large">
+                    <p class="testimonial-quote">"This completely transformed how my team researches competitor campaigns. We now launch with confidence knowing we've analyzed what's actually working."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" style="background: #2563EB;">JD</div>
+                        <div class="author-info">
+                            <h4>John D.</h4>
+                            <p>Marketing Lead</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">"An essential tool for any media buyer. The AI analysis saves me hours every week."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" style="background: #7C3AED;">SW</div>
+                        <div class="author-info">
+                            <h4>Sarah W.</h4>
+                            <p>Freelance Designer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">"The spend estimates alone are worth it. Now I know exactly what budget level we're competing against."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" style="background: #059669;">SJ</div>
+                        <div class="author-info">
+                            <h4>Sam J.</h4>
+                            <p>Project Coordinator</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">"I love how easy it is to set up alerts. I know about competitor moves before my clients do."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" style="background: #DC2626;">DT</div>
+                        <div class="author-info">
+                            <h4>Daniela T.</h4>
+                            <p>Operations Manager</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">"The time I used to spend manually checking competitor ads is now zero. Game changer."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" style="background: #D97706;">AM</div>
+                        <div class="author-info">
+                            <h4>Alex M.</h4>
+                            <p>Freelance Developer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="pill">Pricing</span>
+                <h2>Simple pricing plans</h2>
+            </div>
+            <div class="pricing-grid reveal">
+                <div class="pricing-card">
+                    <h3>Free</h3>
+                    <div class="price">$0<span>/mo</span></div>
+                    <p class="desc">Perfect for getting started</p>
+                    <ul class="features">
+                        <li>5 searches per day</li>
+                        <li>Last 5 active ads</li>
+                        <li>Facebook only</li>
+                        <li>Basic AI summary</li>
+                    </ul>
+                    <button class="btn btn-secondary">Get started</button>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">⚡ Best choice</div>
+                    <h3>Pro</h3>
+                    <div class="price">$29<span>/mo</span></div>
+                    <p class="desc">For serious marketers</p>
+                    <ul class="features">
+                        <li>Unlimited searches</li>
+                        <li>All active + historical ads</li>
+                        <li>Facebook + Google</li>
+                        <li>Full AI analysis</li>
+                        <li>CSV export</li>
+                        <li>Email alerts</li>
+                    </ul>
+                    <button class="btn" style="background: white; color: #2563EB;">Start free trial</button>
+                </div>
+                <div class="pricing-card">
+                    <h3>Agency</h3>
+                    <div class="price">$99<span>/mo</span></div>
+                    <p class="desc">For teams and agencies</p>
+                    <ul class="features">
+                        <li>Everything in Pro</li>
+                        <li>5 team seats</li>
+                        <li>White-label PDF reports</li>
+                        <li>Track 20 competitors</li>
+                        <li>API access</li>
+                    </ul>
+                    <button class="btn btn-secondary">Contact sales</button>
+                </div>
+            </div>
+            <p class="pricing-note">14-day money-back guarantee · Cancel anytime</p>
+        </div>
+    </section>
+
+    <section class="final-cta">
+        <div class="container">
+            <div class="final-cta-content reveal">
+                <div class="floating-icons">
+                    <div class="float-icon" style="top: -60px; left: 10%; animation: float-5 6s ease-in-out infinite;">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                            <line x1="16" y1="2" x2="16" y2="6"/>
+                            <line x1="8" y1="2" x2="8" y2="6"/>
+                            <line x1="3" y1="10" x2="21" y2="10"/>
+                        </svg>
+                    </div>
+                    <div class="float-icon" style="top: -40px; right: 15%; animation: float-6 5s ease-in-out infinite 0.5s;">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12,6 12,12 16,14"/>
+                        </svg>
+                    </div>
+                    <div class="float-icon" style="bottom: -20px; left: 20%; animation: float-4 6s ease-in-out infinite 1s;">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2">
+                            <path d="M9 11l3 3L22 4"/>
+                            <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+                        </svg>
+                    </div>
+                    <div class="float-icon" style="bottom: 0; right: 20%; animation: float-8 5s ease-in-out infinite 1.5s;">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <circle cx="12" cy="12" r="6"/>
+                            <circle cx="12" cy="12" r="2"/>
+                        </svg>
+                    </div>
+                </div>
+                <span class="pill" style="margin-bottom: 20px;">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2.5" style="display: inline; vertical-align: middle; margin-right: 6px;">
+                        <circle cx="12" cy="12" r="10"/>
+                        <circle cx="12" cy="12" r="6"/>
+                        <circle cx="12" cy="12" r="2"/>
+                    </svg>
+                    Ads SpyDR
+                </span>
+                <h2>Stay ahead of every competitor</h2>
+                <p>Start spying on your competitors' ads today. Get instant insights on their strategy, spend, and creative.</p>
+                <button class="btn btn-primary" style="padding: 18px 36px; font-size: 18px;" onclick="document.getElementById('hero-search').scrollIntoView({behavior: 'smooth'})">Start spying free</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="logo-icon" style="width: 28px; height: 28px;">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <circle cx="12" cy="12" r="6"/>
+                            <circle cx="12" cy="12" r="2"/>
+                        </svg>
+                    </div>
+                    <span>© 2026 Ads SpyDR. All rights reserved.</span>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <a href="#">About Us</a>
+                        <a href="#">Contact</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Careers</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <a href="#">Features</a>
+                        <a href="#">Solutions</a>
+                        <a href="#">Integrations</a>
+                        <a href="#">Pricing</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const navbar = document.getElementById('navbar');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('nav-scrolled');
+            } else {
+                navbar.classList.remove('nav-scrolled');
+            }
+        });
+
+        const revealElements = document.querySelectorAll('.reveal');
+        
+        const revealOnScroll = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+        revealElements.forEach(el => revealOnScroll.observe(el));
+
+        function handleHeroSearch(e) {
+            e.preventDefault();
+            const input = document.getElementById('domain-input');
+            const btn = document.getElementById('search-btn');
+            const btnText = document.getElementById('btn-text');
+            const results = document.getElementById('search-results');
+            
+            if (!input.value.trim()) return;
+            
+            btn.disabled = true;
+            btnText.innerHTML = '<span class="loading-spinner"></span>';
+            
+            setTimeout(() => {
+                btn.disabled = false;
+                btnText.textContent = 'Spy Now';
+                results.classList.add('active');
+            }, 800);
+        }
+
+        const counters = document.querySelectorAll('[data-counter]');
+        
+        const countOnScroll = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const el = entry.target;
+                    const target = parseInt(el.getAttribute('data-counter'));
+                    const duration = 2000;
+                    const step = target / (duration / 16);
+                    let current = 0;
+                    
+                    const timer = setInterval(() => {
+                        current += step;
+                        if (current >= target) {
+                            current = target;
+                            clearInterval(timer);
+                        }
+                        el.textContent = Math.floor(current).toLocaleString() + '+';
+                    }, 16);
+                    
+                    countOnScroll.unobserve(el);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        counters.forEach(counter => countOnScroll.observe(counter));
+    </script>
+</body>
+</html>

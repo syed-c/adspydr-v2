@@ -1,0 +1,16 @@
+<svg viewBox="0 0 96 96" width="96" height="96" xmlns="http://www.w3.org/2000/svg">
+  <!-- Ad SpyDR Favicon / App Icon -->
+  <rect width="96" height="96" rx="22" fill="#1860F5"/>
+  <g transform="translate(48,48) scale(1.7)">
+    <circle cx="0" cy="0" r="11" fill="none" stroke="white" stroke-width=".35" stroke-opacity=".28" stroke-dasharray="1.5 2"/>
+    <line x1="0" y1="0" x2="0" y2="-22" stroke="white" stroke-width=".9" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="22" y2="0" stroke="white" stroke-width=".9" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="0" y2="22" stroke="white" stroke-width=".9" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="-22" y2="0" stroke="white" stroke-width=".9" stroke-linecap="round"/>
+    <polyline points="0,0 9,-9 16,-16" fill="none" stroke="white" stroke-width=".9" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline points="0,0 9,9 16,16" fill="none" stroke="white" stroke-width=".9" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline points="0,0 -9,9 -16,16" fill="none" stroke="white" stroke-width=".9" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline points="0,0 -9,-9 -16,-16" fill="none" stroke="white" stroke-width=".9" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="0" cy="0" r="4" fill="white"/>
+  </g>
+</svg>
