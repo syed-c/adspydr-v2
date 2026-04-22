@@ -333,7 +333,7 @@ export default function ComingSoonPage() {
         
         section { padding: 70px 24px; position: relative; z-index: 1; }
         
-        .main-benefit { background: #C4CBCA; padding: 60px 24px; text-align: center; }
+        .main-benefit { background: #0A0F0D; padding: 60px 24px; text-align: center; }
         .benefit-content { max-width: 800px; margin: 0 auto; }
         .benefit-content h2 { font-size: 1.8rem; margin-bottom: 20px; color: #0A0F0D; }
         .benefit-text { font-size: 1.1rem; color: #0A0F0D; line-height: 1.8; }
@@ -348,7 +348,7 @@ export default function ComingSoonPage() {
         .features h2, .benefits h2, .cta h2, .how-it-works h2, .who-for h2, .features-list h2, .faq-section h2, .why-need h2, .keywords-section h2, .main-benefit h2 { text-align: center; font-size: 1.8rem; margin-bottom: 36px; color: #0A0F0D; }
         
         .features-grid, .who-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; max-width: 1000px; margin: 0 auto; }
-        .feature-card, .who-card { background: #C4CBCA; padding: 28px; border-radius: 14px; text-align: center; border: 1px solid rgba(10,15,13,0.2); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+        .feature-card, .who-card { background: #ffffff; padding: 28px; border-radius: 14px; text-align: center; border: 1px solid rgba(10,15,13,0.2); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
         .feature-card:hover { border-color: #F95738; transform: scale(1.02) translateY(-4px); }
         .feature-icon { display: flex; align-items: center; justify-content: center; width: 58px; height: 58px; margin: 0 auto 16px; background: linear-gradient(135deg, rgba(245,158,11,0.15), rgba(245,158,11,0.05)); border-radius: 14px; color: #F95738; }
         .feature-card h3 { font-size: 1rem; margin-bottom: 8px; }
@@ -384,7 +384,7 @@ export default function ComingSoonPage() {
         .keywords-content p { color: #0A0F0D; font-size: 1.05rem; line-height: 1.8; margin-bottom: 16px; }
         .keywords-content p strong { color: #F95738; }
         
-        .cta { background: #C4CBCA; text-align: center; }
+        .cta { background: #0A0F0D; text-align: center; }
         .cta p { color: #0A0F0D; margin-bottom: 24px; font-size: 1.05rem; }
         
         .footer { text-align: center; padding: 30px; color: #555; font-size: 0.8rem; }
